@@ -93,7 +93,7 @@ Les scripts doivent être exécutés manuellement après le premier démarrage :
 docker-compose exec -T postgres psql -U codaSchoolUser -d codaSchool < scripts/init-schema.sql
 
 # Vérifier que les tables ont été créées
-docker-compose exec postgres psql -U codaSchoolUser -d codaSchool -c "SET search_path TO student; \dt"
+docker-compose exec postgres psql -U codaSchoolUser -d codaSchool -c "SELECT tablename FROM pg_tables WHERE schemaname = 'student';"
 
 # 2. Charger les données de test
 docker-compose exec -T postgres psql -U codaSchoolUser -d codaSchool < scripts/seed-data.sql

